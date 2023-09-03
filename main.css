@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1000px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.countDown {
+  width: 900px;
+  height: 100px;
+  font-size: 80px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 20px;
+  background-color: rgb(235, 51, 51);
+  border: 0px;
+  border-radius: 5px;
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgb(207, 45, 45);
+}
+
+.btn:focus {
+  background-color: rgb(224, 4, 4);
+  box-shadow: 0 0 3px 0 rgb(224, 4, 4);
+  border: none;
+}
+
+.btn:disabled {
+  background-color: rgb(230, 111, 111);
+  border: none;
+}
+
+.puzzle-game {
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.puzzle {
+  width: 400px;
+  height: 400px;
+  margin: 50px 40px;
+  background-color: #e6e6e6;
+  box-shadow: 0px 0px 6px 3px #262626bf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.piece {
+  width: 100px;
+  height: 100px;
+  background: url(./image/cute_cat.jpg);
+  background-size: 400px 400px;
+}
+.puzzle-box {
+  width: 100px;
+  height: 100px;
+}
+
+.piece[value="1"] {
+  background-position: 0px 0px;
+}
+.piece[value="2"] {
+  background-position: -100px 0px;
+}
+.piece[value="3"] {
+  background-position: -200px 0px;
+}
+
+.piece[value="4"] {
+  background-position: -300px 0px;
+}
+
+.piece[value="5"] {
+  background-position: 0px -100px;
+}
+
+.piece[value="6"] {
+  background-position: -100px -100px;
+}
+
+.piece[value="7"] {
+  background-position: -200px -100px;
+}
+.piece[value="8"] {
+  background-position: -300px -100px;
+}
+
+.piece[value="9"] {
+  background-position: 0px -200px;
+}
+
+.piece[value="10"] {
+  background-position: -100px -200px;
+}
+
+.piece[value="11"] {
+  background-position: -200px -200px;
+}
+
+.piece[value="12"] {
+  background-position: -300px -200px;
+}
+
+.piece[value="13"] {
+  background-position: 0 -300px;
+}
+
+.piece[value="14"] {
+  background-position: -100px -300px;
+}
+
+.piece[value="15"] {
+  background-position: -200px -300px;
+}
+
+.piece[value="16"] {
+  background-position: -300px -300px;
+}
+
+.modal {
+  display: none;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  box-shadow: 1px 1px 8px 1000px rgba(0, 0, 0, 0.5),
+    1px 1px 20px 5px rgba(0, 0, 0, 0.511);
+  position: absolute;
+  top: 35px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 200px;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 5px;
+  height: 200px;
+  width: 400px;
+}
+
+.modal-block {
+  display: none;
+  padding: 30px 0 15px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(105, 105, 105);border-radius: 5px;
+}
+.modal-block p {
+  padding: 20px;
+  border-top: 1px solid rgb(199, 198, 198);
+  border-bottom: 1px solid rgb(199, 198, 198);
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+.modal-block form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}

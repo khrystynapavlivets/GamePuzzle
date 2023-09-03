@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="countDown">
+			<p class="countTimer">01:00</p>
+		</div>
+		<form class="buttons">
+			<button type="button" class="btn btn-start">Start game!</button>
+			<button type="button" class="btn btn-result " disabled>Check result</button>
+			<button type="button" class="btn btn-new ">New game</button>
+		</form>
+		<div class="puzzle-game">
+			<div class="puzzle puzzle-pieces">
+				<div class="puzzle-box"><div class="piece"></div></div>
+				<div class="puzzle-box"><div class="piece"></div></div>
+				<div class="puzzle-box"><div class="piece"></div></div>
+				<div class="puzzle-box"><div class="piece"></div></div>
+				<div class="puzzle-box"><div class="piece"></div></div>
+				<div class="puzzle-box"><div class="piece"></div></div>
+				<div class="puzzle-box"><div class="piece"></div></div>
+				<div class="puzzle-box"><div class="piece"></div></div>
+				<div class="puzzle-box"><div class="piece"></div></div>
+				<div class="puzzle-box"><div class="piece"></div></div>
+				<div class="puzzle-box"><div class="piece"></div></div>
+				<div class="puzzle-box"><div class="piece"></div></div>
+				<div class="puzzle-box"><div class="piece"></div></div>
+				<div class="puzzle-box"><div class="piece"></div></div>
+				<div class="puzzle-box"><div class="piece"></div></div>
+				<div class="puzzle-box"><div class="piece"></div></div>
+			</div>
+			<div  class="puzzle puzzle-image">
+				<div class="puzzle-box"></div>
+				<div class="puzzle-box"></div>
+				<div class="puzzle-box"></div>
+				<div class="puzzle-box"></div>
+				<div class="puzzle-box"></div>
+				<div class="puzzle-box"></div>
+				<div class="puzzle-box"></div>
+				<div class="puzzle-box"></div>
+				<div class="puzzle-box"></div>
+				<div class="puzzle-box"></div>
+				<div class="puzzle-box"></div>
+				<div class="puzzle-box"></div>
+				<div class="puzzle-box"></div>
+				<div class="puzzle-box"></div>
+				<div class="puzzle-box"></div>
+				<div class="puzzle-box"></div>
+			</div>
+		</div>
+	 </div> 
+	<div class="modal">
+		<div class="modal-block modal-sure">
+			<p>You still have time, you sure?</p>
+			<form >
+				<button type="button"  class="btn btn-closeSure ">Close</button>
+				<button type="button"  class="btn btn-check">Check</button>
+			</form>
+		</div>
+		<div  class="modal-block modal-lose">
+			<p>It's a pity, but you lost</p>
+			<form >
+				<button type="button" class="btn btn-closeLose">Close</button>
+			</form>
+		</div>
+		<div  class="modal-block modal-win">
+			<p>Woohoo, well done, do it!</p>
+			<form >
+				<button type="button"  class="btn btn-closeWin">Close</button>
+			</form>
+		</div>
+	</div> 
+
+
+
+
+
+
+
+
+
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
